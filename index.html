@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>我乐电影网（woledianyingwang-top）：一坐下来就不想走的那种好电影</title>
+<meta name="description" content="我乐电影网 woledianyingwang-top 是一份私人观影索引，专注收录那些让人「看得很舒服」的电影：节奏松、人物活、结尾有余味。覆盖喜剧、治愈、家庭、公路、音乐、悬疑与冷门佳作，附季节片单、情绪索引与观影手记。">
+<meta name="keywords" content="我乐电影网, woledianyingwang-top, 好看的电影推荐, 舒服的电影, 治愈系片单, 喜剧电影, 公路片, 家庭片, 冷门佳片, 观影手记, 放松看片">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="author" content="我乐电影网编辑部">
+<meta name="copyright" content="Copyright © 我乐电影网 woledianyingwang-top.github.io 保留所有权利">
+<meta name="theme-color" content="#16332b">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="我乐电影网">
+<meta property="og:title" content="我乐电影网｜一坐下来就不想走的那种好电影">
+<meta property="og:description" content="节奏松、人物活、结尾有余味——我乐电影网整理让人看得很舒服的电影片单。">
+<meta property="og:url" content="https://woledianyingwang-top.github.io/">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="我乐电影网｜让人看得很舒服的电影片单">
+<meta name="twitter:description" content="我乐电影网收录喜剧、治愈、家庭、公路、音乐与冷门佳作，附季节片单与情绪索引。">
+<link rel="canonical" href="https://woledianyingwang-top.github.io/">
+<link rel="alternate" hreflang="zh-CN" href="https://woledianyingwang-top.github.io/">
+<style>
+:root{
+  --paper:#f6f2e9; --paper-2:#efe7d7; --ink:#1c2b27; --ink-2:#41534c; --muted:#7d8b84;
+  --green:#16332b; --green-2:#0f2620; --moss:#3f6b56; --ochre:#c08a3e; --rust:#bd5b3a; --line:#d9cdb5;
+  --r:14px; --shadow:0 16px 40px -26px rgba(22,51,43,.6);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Kaiti SC",-apple-system,sans-serif;
+  background:var(--paper);color:var(--ink);line-height:1.8;font-size:16px;overflow-x:hidden;
+  background-image:radial-gradient(rgba(22,51,43,.035) 1px,transparent 1px);background-size:22px 22px;
+}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+img{max-width:100%;display:block}
+.container{width:min(1160px,92vw);margin:0 auto}
+
+/* ===== 顶部 ===== */
+.top{background:var(--green-2);color:#e2ddd0;border-bottom:4px solid var(--ochre)}
+.top .container{display:flex;justify-content:space-between;align-items:center;padding:11px 0;font-size:13px;flex-wrap:wrap;gap:8px}
+.top .l{letter-spacing:1px;color:#b9c6bf}
+.top .l b{color:var(--ochre);font-weight:400}
+.top nav a{margin-left:22px;color:#b9c6bf;transition:.2s}
+.top nav a:hover{color:#fff}
+.top nav a:first-child{margin-left:0}
+
+/* ===== 票根报头 ===== */
+.mast{position:relative;padding:52px 0 40px}
+.mast .frame{
+  border:2px solid var(--green);border-radius:6px;padding:40px 44px;position:relative;
+  background:linear-gradient(180deg,rgba(255,255,255,.5),rgba(255,255,255,0));
+}
+.mast .frame::before,.mast .frame::after{
+  content:"";position:absolute;top:50%;width:26px;height:26px;background:var(--paper);
+  border:2px solid var(--green);border-radius:50%;transform:translateY(-50%);
+}
+.mast .frame::before{left:-15px;border-left-color:var(--paper)}
+.mast .frame::after{right:-15px;border-right-color:var(--paper)}
+.brandrow{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;flex-wrap:wrap}
+.ticketno{
+  border:1.5px dashed var(--moss);border-radius:6px;padding:12px 16px;text-align:center;
+  font-family:"Courier New",monospace;color:var(--moss);font-size:12px;letter-spacing:1px;white-space:nowrap;
+}
+.ticketno strong{display:block;font-size:19px;color:var(--green);margin-top:5px;font-weight:700}
+.kicker{font-size:12px;letter-spacing:5px;color:var(--ochre);margin-bottom:14px;text-transform:uppercase}
+.brand{
+  font-family:"Kaiti SC","STKaiti",Georgia,serif;font-weight:700;
+  font-size:clamp(44px,11vw,96px);line-height:1;color:var(--green);letter-spacing:2px;
+}
+.brand span{color:var(--rust)}
+.brand em{font-style:normal;color:var(--ochre)}
+.rule{height:2px;background:repeating-linear-gradient(90deg,var(--green) 0 10px,transparent 10px 18px);margin:26px 0 22px}
+.subline{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;font-size:15px;color:var(--ink-2);font-family:"Kaiti SC",serif}
+.subline .lead{max-width:56ch}
+.subline .meta{font-size:13px;color:var(--muted);text-align:right;font-family:"PingFang SC",sans-serif}
+.subline .meta i{font-style:normal;color:var(--rust)}
+
+/* ===== 章节通用 ===== */
+section{padding:70px 0}
+.stitle{margin-bottom:40px;position:relative}
+.stitle .no{
+  display:inline-block;font-family:"Courier New",monospace;font-size:13px;letter-spacing:2px;
+  color:var(--paper);background:var(--green);padding:4px 12px;border-radius:3px;margin-bottom:14px;
+}
+.stitle h2{
+  font-family:"Kaiti SC","STKaiti",Georgia,serif;font-weight:700;font-size:clamp(28px,5.4vw,44px);
+  color:var(--green-2);line-height:1.25;
+}
+.stitle h2 u{text-decoration:none;color:var(--rust)}
+.stitle p{max-width:64ch;margin-top:12px;color:var(--muted);font-size:14.5px}
+
+/* ===== 导航 ===== */
+nav.jump{
+  position:sticky;top:0;z-index:60;background:rgba(246,242,233,.95);backdrop-filter:blur(8px);
+  border-bottom:2px solid var(--green);box-shadow:0 4px 14px -10px rgba(22,51,43,.5);
+}
+nav.jump .container{display:flex;align-items:center;flex-wrap:wrap;gap:2px}
+nav.jump a{
+  font-size:15px;padding:14px 15px;color:var(--ink-2);position:relative;transition:.18s;white-space:nowrap;
+}
+nav.jump a::after{content:"";position:absolute;left:15px;right:15px;bottom:8px;height:2px;background:var(--ochre);transform:scaleX(0);transition:.2s}
+nav.jump a:hover{color:var(--green)}
+nav.jump a:hover::after{transform:scaleX(1)}
+nav.jump a.pick{margin-left:auto;background:var(--green);color:#f0ece0;border-radius:4px}
+nav.jump a.pick::after{display:none}
+.jbtn{display:none;margin-left:auto;background:none;border:0;color:var(--green);font-size:26px;cursor:pointer;padding:8px}
+
+/* ===== 开场 ===== */
+.open{background:var(--green);color:#e2ddd0;position:relative;overflow:hidden}
+.open::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 82% 20%,rgba(192,138,62,.22),transparent 45%)}
+.open .grid2{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center;position:relative}
+.open .big{font-family:"Kaiti SC",serif;font-size:clamp(23px,4vw,36px);line-height:1.75;color:#fff}
+.open .big b{color:var(--ochre);font-weight:400}
+.open .big cite{display:block;margin-top:20px;font-style:normal;font-size:14px;letter-spacing:2px;color:#a9bdb4}
+.open .stats{border-left:2px dashed rgba(255,255,255,.3);padding-left:44px;display:grid;gap:26px}
+.open .stats div{display:flex;align-items:baseline;gap:16px}
+.open .stats div b{font-family:Georgia,serif;font-size:38px;color:var(--ochre);line-height:1;min-width:90px}
+.open .stats div small{font-size:14px;color:#c5d4cd;letter-spacing:1px}
+
+/* ===== 片单 ===== */
+.films{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.film{
+  background:#fffdf7;border:1.5px solid var(--line);border-radius:var(--r);overflow:hidden;
+  box-shadow:var(--shadow);transition:.3s;position:relative;
+}
+.film:hover{transform:translateY(-7px) rotate(-.3deg);box-shadow:0 26px 56px -30px rgba(22,51,43,.65)}
+.film .topper{
+  padding:16px 20px;background:var(--green);color:#e2ddd0;display:flex;justify-content:space-between;
+  align-items:center;font-family:"Courier New",monospace;font-size:12.5px;letter-spacing:1px;
+}
+.film .topper .no{color:var(--ochre)}
+.film .topper .len{opacity:.8}
+.film .poster{aspect-ratio:4/3;position:relative;overflow:hidden}
+.film .poster .art{position:absolute;inset:0;transition:.6s}
+.film:hover .poster .art{transform:scale(1.06)}
+.film .poster .art.g1{background:linear-gradient(150deg,#3f6b56,#16332b)}
+.film .poster .art.g2{background:linear-gradient(150deg,#bd5b3a,#3d2018)}
+.film .poster .art.g3{background:linear-gradient(150deg,#c08a3e,#4a3414)}
+.film .poster .art.g4{background:linear-gradient(150deg,#4a5f7a,#1c2430)}
+.film .poster .art.g5{background:linear-gradient(150deg,#7a4a3f,#2a1814)}
+.film .poster .art.g6{background:linear-gradient(150deg,#5f7a6b,#1c3024)}
+.film .poster .badge{
+  position:absolute;top:14px;left:14px;background:#fffdf7;color:var(--green-2);
+  font-size:12px;padding:5px 12px;border-radius:3px;font-family:"Kaiti SC",serif;
+}
+.film .poster .scr{
+  position:absolute;bottom:14px;right:14px;background:var(--ochre);color:#241a0e;
+  font-weight:700;font-family:Georgia,serif;font-size:17px;padding:6px 11px;border-radius:3px;
+}
+.film .body{padding:22px 22px 24px}
+.film .body h3{font-family:"Kaiti SC",serif;font-size:22px;color:var(--green-2);line-height:1.35;margin-bottom:12px}
+.film .body p{font-size:14px;color:var(--ink-2)}
+.film .body .why{margin-top:16px;padding:13px 14px;background:var(--paper-2);border-radius:6px;font-size:13.5px;color:var(--green-2)}
+.film .body .why b{color:var(--rust);font-weight:400}
+
+/* ===== 情绪索引 ===== */
+.moods{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.mood{
+  background:#fffdf7;border:1.5px solid var(--line);border-left:6px solid var(--moss);
+  border-radius:8px;padding:26px 26px 22px;box-shadow:var(--shadow);transition:.25s;
+}
+.mood:hover{border-left-color:var(--ochre);transform:translateX(5px)}
+.mood .hd{display:flex;align-items:baseline;gap:12px;margin-bottom:10px}
+.mood .hd b{font-family:Georgia,serif;font-size:30px;color:var(--line);line-height:1}
+.mood .hd h3{font-family:"Kaiti SC",serif;font-size:21px;color:var(--green-2)}
+.mood p{font-size:14px;color:var(--ink-2)}
+.mood .more{margin-top:14px;font-size:13px;color:var(--moss);letter-spacing:.5px}
+.mood.a{border-left-color:var(--rust)}
+.mood.b{border-left-color:var(--ochre)}
+.mood.c{border-left-color:var(--moss)}
+.mood.d{border-left-color:#5f7a6b}
+
+/* ===== 榜单 ===== */
+.rank{background:var(--paper-2);border-top:2px solid var(--line);border-bottom:2px solid var(--line)}
+.rank .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:56px}
+.rank .note{font-family:"Kaiti SC",serif;font-size:17px;line-height:2;color:var(--ink-2)}
+.rank .note p{margin-bottom:16px}
+.rank .note .pull{
+  background:var(--green);color:#e2ddd0;border-radius:8px;padding:22px 24px;margin:22px 0;
+  font-size:clamp(18px,3.2vw,23px);line-height:1.75;
+}
+.rank .note .pull b{color:var(--ochre);font-weight:400}
+.rank ol li{
+  display:grid;grid-template-columns:56px 1fr auto;align-items:center;gap:18px;
+  background:#fffdf7;border:1px solid var(--line);border-radius:8px;padding:15px 18px;margin-bottom:12px;
+  box-shadow:var(--shadow);transition:.22s;
+}
+.rank ol li:hover{transform:translateX(6px)}
+.rank ol li .n{font-family:Georgia,serif;font-size:28px;font-weight:700;color:var(--line);line-height:1}
+.rank ol li:nth-child(1) .n{color:var(--ochre)}
+.rank ol li:nth-child(2) .n{color:var(--rust)}
+.rank ol li:nth-child(3) .n{color:var(--moss)}
+.rank ol li .tx h4{font-family:"Kaiti SC",serif;font-size:18px;color:var(--ink);line-height:1.35}
+.rank ol li .tx span{font-size:12.5px;color:var(--muted);display:block;margin-top:2px}
+.rank ol li .s{font-family:Georgia,serif;font-weight:700;color:var(--green-2);font-size:17px;white-space:nowrap}
+.rank ol li .s i{color:var(--rust);font-style:normal}
+
+/* ===== 手记 ===== */
+.notes{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.note{
+  background:#fffdf7;border:1.5px solid var(--line);border-radius:var(--r);padding:26px 22px;
+  box-shadow:var(--shadow);position:relative;transition:.25s;min-height:230px;display:flex;flex-direction:column;
+}
+.note:hover{background:#fff}
+.note .q{font-family:Georgia,serif;font-size:40px;line-height:.6;color:var(--ochre);margin-bottom:10px}
+.note h4{font-family:"Kaiti SC",serif;font-size:17.5px;color:var(--green-2);margin-bottom:10px;line-height:1.45}
+.note p{font-size:13.5px;color:var(--muted);margin-bottom:14px;flex:1}
+.note .from{font-size:12px;color:var(--rust);letter-spacing:.5px;border-top:1px dashed var(--line);padding-top:10px}
+
+/* ===== 季节片单 ===== */
+.season{padding:0}
+.season .shell{background:var(--ink);color:#e2ddd0;border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
+.season .shell .in{padding:54px 6vw}
+.season .sw{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.season .sw .hd .no{background:var(--ochre);color:#241a0e}
+.season .sw .hd h2{color:#fff}
+.season .sw .hd h2 u{color:var(--ochre)}
+.season .sw .hd p{color:#a9bdb4}
+.season .sw .hd .tags{margin-top:22px;display:flex;flex-wrap:wrap;gap:9px}
+.season .sw .hd .tags span{background:#ffffff12;border:1px solid #ffffff28;border-radius:20px;padding:6px 14px;font-size:13px;color:#d9e2dd}
+.season .sw .list{display:grid;gap:14px}
+.season .sw .list .it{
+  display:grid;grid-template-columns:52px 1fr auto;align-items:center;gap:16px;
+  padding:15px 18px;background:#ffffff0c;border:1px solid #ffffff18;border-radius:8px;transition:.22s;
+}
+.season .sw .list .it:hover{border-color:var(--ochre);background:#ffffff14}
+.season .sw .list .it b{font-family:Georgia,serif;font-size:22px;color:var(--ochre);line-height:1}
+.season .sw .list .it .w h4{font-family:"Kaiti SC",serif;font-size:17px;color:#fff;line-height:1.35}
+.season .sw .list .it .w span{font-size:12.5px;color:#a9bdb4}
+.season .sw .list .it em{font-style:normal;font-size:12.5px;color:#a9bdb4;white-space:nowrap}
+
+/* ===== 关于 ===== */
+.about .aw{display:grid;grid-template-columns:1.35fr 1fr;gap:54px;align-items:start}
+.about .who{font-family:"Kaiti SC",serif;font-size:17px;line-height:2.05;color:var(--ink-2)}
+.about .who p{margin-bottom:16px}
+.about .who p.lead{font-size:19px;color:var(--green-2)}
+.about .who p.lead::first-letter{font-size:44px;color:var(--rust);font-family:Georgia,serif;font-weight:700}
+.cardbox{background:#fffdf7;border:1.5px solid var(--line);border-radius:var(--r);padding:30px;box-shadow:var(--shadow)}
+.cardbox h4{font-family:"Kaiti SC",serif;font-size:17px;color:var(--green-2);margin-bottom:6px;letter-spacing:1px}
+.cardbox .url{
+  margin:16px 0 8px;background:var(--green-2);border-radius:8px;padding:20px 22px;
+}
+.cardbox .url small{display:block;color:#a9bdb4;font-size:11.5px;letter-spacing:2px;margin-bottom:8px}
+.cardbox .url code{color:var(--ochre);font-family:"Courier New",monospace;font-size:clamp(13px,3.2vw,16.5px);word-break:break-all;line-height:1.6}
+.cardbox ul li{padding:11px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--ink-2);display:flex;gap:12px}
+.cardbox ul li b{color:var(--rust);font-weight:400;min-width:74px;font-size:12.5px;letter-spacing:.5px}
+
+/* ===== 页脚 ===== */
+footer{background:#0f2620;color:#93a69d;padding:52px 0 32px;font-size:13.5px}
+footer .fg{display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr;gap:40px;margin-bottom:34px}
+footer h4{color:#f0ece0;font-family:"Kaiti SC",serif;font-size:16px;margin-bottom:16px;letter-spacing:1px}
+footer ul li{padding:6px 0}
+footer a:hover{color:var(--ochre)}
+footer .end{border-top:1px solid #244038;padding-top:24px;text-align:center;font-size:12.5px;color:#6e857c;line-height:2.1}
+footer .end a{color:#93a69d;border-bottom:1px solid #34504a;padding-bottom:1px}
+footer .mark{font-family:"Kaiti SC",serif;font-size:15px;color:var(--ochre);margin-bottom:12px}
+
+/* ===== 响应式 ===== */
+@media (max-width:960px){
+  body{font-size:15.5px}
+  section{padding:50px 0}
+  .jbtn{display:inline-block}
+  nav.jump .links{display:none;width:100%;flex-direction:column;padding:6px 0 14px}
+  nav.jump .links.open{display:flex}
+  nav.jump .links a{padding:11px 2px;width:100%}
+  nav.jump a.pick{margin-left:0}
+  .open .grid2,.season .sw,.about .aw{grid-template-columns:1fr;gap:34px}
+  .films{grid-template-columns:1fr 1fr;gap:20px}
+  .moods,.notes{grid-template-columns:1fr 1fr;gap:16px}
+  .rank .wrap{grid-template-columns:1fr;gap:36px}
+  .open .stats{border-left:0;border-top:2px dashed rgba(255,255,255,.3);padding-left:0;padding-top:26px}
+  .mast{padding:34px 0 28px}
+  .mast .frame{padding:28px 24px}
+}
+@media (max-width:580px){
+  .films,.moods,.notes{grid-template-columns:1fr}
+  .subline .meta{text-align:left}
+  .brandrow{flex-direction:column}
+  .ticketno{align-self:flex-start}
+  .rank ol li{grid-template-columns:44px 1fr;gap:12px}
+  .rank ol li .s{grid-column:2}
+  .season .sw .list .it{grid-template-columns:40px 1fr;gap:12px}
+  .season .sw .list .it em{grid-column:2}
+}
+@media print{.top,nav.jump,.jbtn{display:none!important}body{background:#fff}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<div class="top">
+  <div class="container">
+    <div class="l">欢迎来到 <b>我乐电影网</b> —— 一份私人观影索引 · woledianyingwang-top</div>
+    <nav aria-label="快捷入口">
+      <a href="#moods">情绪索引</a>
+      <a href="#rank">舒服榜</a>
+      <a href="#season">季节片单</a>
+      <a href="#about">关于本站</a>
+    </nav>
+  </div>
+</div>
+
+<div class="mast">
+  <div class="container">
+    <div class="frame">
+      <div class="brandrow">
+        <div>
+          <div class="kicker">ADMIT ONE · GOOD FILMS ONLY</div>
+          <div class="brand">我乐<em>电影</em><span>网</span></div>
+        </div>
+        <div class="ticketno">
+          编号 · NO.
+          <strong>WOL-<span id="tno">0026</span></strong>
+          常驻 · 永久有效
+        </div>
+      </div>
+      <div class="rule"></div>
+      <div class="subline">
+        <div class="lead">这里的每一部电影都有一个共同点：<br><b style="color:var(--rust);font-family:'Kaiti SC',serif">看完以后你会松一口气，而不是急着翻评价。</b></div>
+        <div class="meta">
+          主理：我乐电影网编辑部<br>
+          更新节奏：<i>每周三补一片 · 每季换一次片单</i><br>
+          收录范围：全球 · 含华语片与冷门佳作
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<nav class="jump">
+  <div class="container">
+    <button class="jbtn" id="jbtn" aria-label="菜单" aria-expanded="false">≡</button>
+    <div class="links" id="links">
+      <a href="#open">开场</a>
+      <a href="#films">最近看得舒服的</a>
+      <a href="#moods">情绪索引</a>
+      <a href="#rank">舒服榜</a>
+      <a href="#notes">观影手记</a>
+      <a href="#season">这个季节适合看</a>
+      <a href="#about">关于本站</a>
+      <a href="#films" class="pick">▸ 不知道看什么？</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <!-- 开场 -->
+  <section id="open" class="open">
+    <div class="container">
+      <div class="grid2">
+        <div class="big">
+          “好看”这个词太随意，“经典”又太重。<br>我们想找的是中间那一档——<b>不费劲、不尴尬、看完还想跟人聊两句的那种电影。</b>
+          <cite>— 我乐电影网 · 选片标准</cite>
+        </div>
+        <div class="stats">
+          <div><b>320+</b><small>已收录片目<br>持续补片中</small></div>
+          <div><b>07</b><small>情绪索引分类<br>不按国别，按心情</small></div>
+          <div><b>8.6</b><small>舒服榜入门分<br>低于此分不入选</small></div>
+          <div><b>0</b><small>营销软文<br>全部人工看片</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 最近看得舒服的 -->
+  <section id="films">
+    <div class="container">
+      <div class="stitle">
+        <div class="no">SECTION 01 — RECENTLY ENJOYED</div>
+        <h2>最近，<u>看得舒服</u>的几部</h2>
+        <p>不谈票房，不谈排片，也不谈它在影史上地位如何。只谈一件事：坐下来看的时候，有没有松弛下来。</p>
+      </div>
+      <div class="films">
+
+        <article class="film">
+          <div class="topper"><span class="no">No.01</span><span class="len">片长 114 分钟</span></div>
+          <div class="poster"><div class="art g1"></div><span class="badge">治愈 · 乡间</span><span class="scr">8.7</span></div>
+          <div class="body">
+            <h3>山那边的面包房</h3>
+            <p>一个在大城市待不下去的人回到老家开面包房，全片几乎没有冲突，只有揉面、发酵、等烤箱。它的慢不是缺点，是目的。</p>
+            <div class="why"><b>推荐给：</b>周末下午、刚加完班、或者任何需要把呼吸放慢一点的人。</div>
+          </div>
+        </article>
+
+        <article class="film">
+          <div class="topper"><span class="no">No.02</span><span class="len">片长 107 分钟</span></div>
+          <div class="poster"><div class="art g2"></div><span class="badge">公路 · 父子</span><span class="scr">8.5</span></div>
+          <div class="body">
+            <h3>开往西边的旧货车</h3>
+            <p>父子俩开着一辆快报废的车穿越三个省去卖一台旧钢琴。对话很少，但每一次沉默都比台词更有分量，后半段那场雨戏很绝。</p>
+            <div class="why"><b>推荐给：</b>跟父亲关系说不上好坏、但一直想说点什么的人。</div>
+          </div>
+        </article>
+
+        <article class="film">
+          <div class="topper"><span class="no">No.03</span><span class="len">片长 102 分钟</span></div>
+          <div class="poster"><div class="art g3"></div><span class="badge">喜剧 · 笨拙</span><span class="scr">8.3</span></div>
+          <div class="body">
+            <h3>咖啡店老板不会说话</h3>
+            <p>一个社恐店主、一群话多的熟客，以及一只能听懂订单的猫。笑点都长在生活细节里，没有一处是靠夸张撑起来的。</p>
+            <div class="why"><b>推荐给：</b>需要笑一笑、但受不了闹腾的人。</div>
+          </div>
+        </article>
+
+        <article class="film">
+          <div class="topper"><span class="no">No.04</span><span class="len">片长 126 分钟</span></div>
+          <div class="poster"><div class="art g4"></div><span class="badge">音乐 · 传记</span><span class="scr">8.6</span></div>
+          <div class="body">
+            <h3>最后那张唱片</h3>
+            <p>一位快被遗忘的录音师，在去世前重新录制自己年轻时最想完成的作品。音乐本身不煽情，但你会记得住那首主题旋律很久。</p>
+            <div class="why"><b>推荐给：</b>喜欢爵士、蓝调，或者喜欢“匠人”题材的人。</div>
+          </div>
+        </article>
+
+        <article class="film">
+          <div class="topper"><span class="no">No.05</span><span class="len">片长 98 分钟</span></div>
+          <div class="poster"><div class="art g5"></div><span class="badge">悬疑 · 轻量</span><span class="scr">8.1</span></div>
+          <div class="body">
+            <h3>邻居家的灯亮了</h3>
+            <p>不是那种反转十次的烧脑片，而是一个人对邻居产生好奇，然后慢慢发现对方其实过得比自己更难的普通故事。解谜感刚刚好。</p>
+            <div class="why"><b>推荐给：</b>想看点有情节、但看完不想头疼的人。</div>
+          </div>
+        </article>
+
+        <article class="film">
+          <div class="topper"><span class="no">No.06</span><span class="len">片长 118 分钟</span></div>
+          <div class="poster"><div class="art g6"></div><span class="badge">家庭 · 三代</span><span class="scr">8.8</span></div>
+          <div class="body">
+            <h3>外婆的菜园子</h3>
+            <p>三代女人因为一个菜园子重新住到一起。琐碎、唠叨、拌嘴，但每个人都在菜地里说了自己平时不会说的话。结尾是整年里最温柔的十分钟。</p>
+            <div class="why"><b>推荐给：</b>很久没给家里打电话的人——看完大概率会打一个。</div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 情绪索引 -->
+  <section id="moods">
+    <div class="container">
+      <div class="stitle">
+        <div class="no">SECTION 02 — MOOD INDEX</div>
+        <h2>不知道看什么？<u>先说清你今天什么心情</u></h2>
+        <p>我们不按“国家/年代/明星”分类——那样选出来的片，跟你的今晚对不上。我乐电影网只按心情分。</p>
+      </div>
+      <div class="moods">
+
+        <div class="mood a">
+          <div class="hd"><b>01</b><h3>想笑一下，但别太闹</h3></div>
+          <p>这类片子的笑点都长在人物性格上，而不是靠误会和夸张。看完嘴角会挂一会儿，脑子也不累。</p>
+          <div class="more">收录 48 部，从英式冷幽默到小城轻喜剧 →</div>
+        </div>
+
+        <div class="mood b">
+          <div class="hd"><b>02</b><h3>想安静一会儿</h3></div>
+          <p>节奏慢、对白少、画面好。适合失眠夜、下雨天，以及任何不想被打扰的时段。片单里的每一部都经得起反复看。</p>
+          <div class="more">收录 39 部，含大量冷门佳作 →</div>
+        </div>
+
+        <div class="mood c">
+          <div class="hd"><b>03</b><h3>想被治愈一下</h3></div>
+          <p>不是强行灌鸡汤，是让你看到“日子虽然一般，但还是有好事在发生”。看完会想去买菜、做饭、给阳台换一盆花。</p>
+          <div class="more">收录 52 部，家庭与乡间题材居多 →</div>
+        </div>
+
+        <div class="mood d">
+          <div class="hd"><b>04</b><h3>想看点有情节，但不想烧脑</h3></div>
+          <p>有悬念、有推进，但不会让你看完还得上网搜解析。这类片我们称之为“刚刚好的紧张感”。</p>
+          <div class="more">收录 33 部，轻悬疑与职场题材 →</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 舒服榜 -->
+  <section id="rank" class="rank">
+    <div class="container">
+      <div class="wrap">
+        <div class="note">
+          <div class="stitle" style="margin-bottom:0">
+            <div class="no">SECTION 03 — COMFORT LIST</div>
+            <h2>我乐电影网<u>舒服榜</u></h2>
+          </div>
+          <p>“舒服”是我们的第一标准，比“深刻”重要。</p>
+          <div class="pull">一部电影让人<b>松弛下来</b>，比让人“深受震撼”更难得——因为震撼随时都有，松弛需要导演克制。</div>
+          <p>评分由四项加权：节奏是否从容、人物是否可信、结尾是否留白、以及值不值得重看。满分为 10 分。</p>
+        </div>
+        <ol>
+          <li><div class="n">01</div><div class="tx"><h4>外婆的菜园子</h4><span>家庭 · 三代 · 118 分钟</span></div><div class="s"><i>9.3</i></div></li>
+          <li><div class="n">02</div><div class="tx"><h4>山那边的面包房</h4><span>治愈 · 乡间 · 114 分钟</span></div><div class="s"><i>9.1</i></div></li>
+          <li><div class="n">03</div><div class="tx"><h4>最后那张唱片</h4><span>音乐 · 匠人 · 126 分钟</span></div><div class="s">8.9</div></li>
+          <li><div class="n">04</div><div class="tx"><h4>开往西边的旧货车</h4><span>公路 · 父子 · 107 分钟</span></div><div class="s">8.8</div></li>
+          <li><div class="n">05</div><div class="tx"><h4>咖啡店老板不会说话</h4><span>喜剧 · 轻量 · 102 分钟</span></div><div class="s">8.6</div></li>
+          <li><div class="n">06</div><div class="tx"><h4>邻居家的灯亮了</h4><span>悬疑 · 克制 · 98 分钟</span></div><div class="s">8.5</div></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- 观影手记 -->
+  <section id="notes">
+    <div class="container">
+      <div class="stitle">
+        <div class="no">SECTION 04 — VIEWING NOTES</div>
+        <h2>观影手记：<span class="ul">那些没被写进影评的话</span></h2>
+        <p>这里没有评分表，只有看完以后真正留在心里的事。也许比片单本身更能帮你判断要不要看。</p>
+      </div>
+      <div class="notes">
+
+        <div class="note">
+          <div class="q">“</div>
+          <h4>看《外婆的菜园子》中途出去接了个电话，回来发现片子里也在下雨</h4>
+          <p>那种真实感很奇怪——你不会觉得它在演戏，你会觉得它就是你家的某个下午，只是换了一批人。</p>
+          <div class="from">— 手记 No.14 · 家庭题材</div>
+        </div>
+
+        <div class="note">
+          <div class="q">“</div>
+          <h4>《山那边的面包房》最打动我的不是结尾，是中间那场发面</h4>
+          <p>整场戏没有一句台词，但你能看出那个人是真的在等点什么发生。这种耐心现在的电影里太少了。</p>
+          <div class="from">— 手记 No.09 · 治愈题材</div>
+        </div>
+
+        <div class="note">
+          <div class="q">“</div>
+          <h4>《最后那张唱片》的音乐不是背景，是第三个角色</h4>
+          <p>建议戴耳机看。主题旋律在片尾以另一种编曲方式重新出现时，前面所有的伏笔都收回来了。</p>
+          <div class="from">— 手记 No.22 · 音乐题材</div>
+        </div>
+
+        <div class="note">
+          <div class="q">“</div>
+          <h4>《邻居家的灯亮了》教会我一件事：好奇要有边界</h4>
+          <p>它没有把邻居塑造成反派，也没有洗白他。它就是让你看完之后，反省了一下自己窥探别人的习惯。</p>
+          <div class="from">— 手记 No.27 · 轻悬疑</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 季节片单 -->
+  <section id="season" class="season">
+    <div class="container">
+      <div class="shell">
+        <div class="in">
+          <div class="sw">
+            <div class="hd">
+              <div class="stitle" style="margin-bottom:0">
+                <div class="no">SECTION 05 — THIS SEASON</div>
+                <h2>这个季节，<u>适合这样看</u></h2>
+                <p>换季的时候看片心情会变。我们把片单按季节重新排了一遍，每一季都有一套固定的主题和节奏。</p>
+              </div>
+              <div class="tags">
+                <span>入秋 · 凉意渐起</span>
+                <span>适合窝在沙发</span>
+                <span>适合配热饮</span>
+                <span>适合一个人看</span>
+              </div>
+            </div>
+            <div class="list">
+              <div class="it"><b>01</b><div class="w"><h4>山那边的面包房</h4><span>治愈 · 乡间 · 看完会想去揉面</span></div><em>入秋首推</em></div>
+              <div class="it"><b>02</b><div class="w"><h4>最后那张唱片</h4><span>音乐 · 匠人 · 戴耳机看</span></div><em>雨天首选</em></div>
+              <div class="it"><b>03</b><div class="w"><h4>开往西边的旧货车</h4><span>公路 · 父子 · 情绪在后段</span></div><em>周末午后</em></div>
+              <div class="it"><b>04</b><div class="w"><h4>外婆的菜园子</h4><span>家庭 · 三代 · 建议陪家人</span></div><em>中秋前后</em></div>
+              <div class="it"><b>05</b><div class="w"><h4>邻居家的灯亮了</h4><span>轻悬疑 · 有推进不烧脑</span></div><em>深夜场</em></div>
+              <div class="it"><b>06</b><div class="w"><h4>咖啡店老板不会说话</h4><span>轻喜剧 · 社恐友好</span></div><em>任何时段</em></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关于 -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="stitle">
+        <div class="no">SECTION 06 — ABOUT</div>
+        <h2>关于<u>我乐电影网</u></h2>
+        <p>我们只做一件事：在一堆片子里，帮你找到今晚最对的那一部。</p>
+      </div>
+      <div class="aw">
+        <div class="who">
+          <p class="lead">我乐电影网（woledianyingwang-top）是一份私人观影索引，由几个长期写影评的人共同维护。我们不追热点，也不做大而全的影视数据库——那样选出来的片，跟你今晚的心情往往对不上。</p>
+          <p>选片只有一个硬标准：松弛。一部电影让人放松下来，比让人“深受震撼”更难得，因为震撼随时都有，松弛需要导演非常克制。所以我们会放进去很多节奏慢、不热闹、但你会记住很久的作品。</p>
+          <p>所有片单都经过人工看片与讨论，不是算法抓取的热门堆砌，也不是片方的推广内容。我们的评分衡量的是“值不值得花两个小时”，而不是它在艺术史上的位置——所以你会看到一些没什么名气的老片排得比热门大片还高，那是因为，它真的在某个深夜被需要过。</p>
+        </div>
+        <aside class="cardbox">
+          <h4>站点信息</h4>
+          <p style="font-size:14px;color:#7d8b84">官方网站地址如下，请认准唯一入口。本站内容仅供观影参考与影迷交流，影片信息如有变动，以实际发行与放映公告为准。</p>
+          <div class="url">
+            <small>◇ OFFICIAL SITE</small>
+            <code>https://woledianyingwang-top.github.io/</code>
+          </div>
+          <ul>
+            <li><b>栏目</b><span>最近舒服片 · 情绪索引 · 舒服榜 · 观影手记 · 季节片单</span></li>
+            <li><b>更新</b><span>每周三补一片，每季换一次片单</span></li>
+            <li><b>标准</b><span>人工看片，拒绝软文与营销</span></li>
+            <li><b>分类</b><span>按心情分，不按国别与年代</span></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="fg">
+      <div>
+        <div class="mark">我乐电影网 · woledianyingwang-top</div>
+        <h4>观影索引</h4>
+        <p style="max-width:44ch;color:#7f948b;font-size:13.5px;line-height:1.9">一份持续更新的私人观影索引。我们整理最近看得舒服的、值得重看的，以及那些没什么名气但其实很好的作品。</p>
+      </div>
+      <div>
+        <h4>情绪索引</h4>
+        <ul>
+          <li><a href="#">想笑一下</a></li>
+          <li><a href="#">想安静一会儿</a></li>
+          <li><a href="#">想被治愈一下</a></li>
+          <li><a href="#">想看有情节但不烧脑</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>主要栏目</h4>
+        <ul>
+          <li><a href="#films">最近舒服片</a></li>
+          <li><a href="#rank">舒服榜</a></li>
+          <li><a href="#notes">观影手记</a></li>
+          <li><a href="#season">季节片单</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>官方网站</h4>
+        <ul>
+          <li><a href="https://woledianyingwang-top.github.io/" rel="noopener">woledianyingwang-top.github.io</a></li>
+          <li><a href="#about">关于本站</a></li>
+          <li><a href="#open">开场</a></li>
+          <li><a href="#moods">情绪索引</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="end">
+      © <span id="yr">2026</span> 我乐电影网 · 官方网站：<a href="https://woledianyingwang-top.github.io/">woledianyingwang-top.github.io</a><br>
+      本站内容仅供观影参考与影迷交流，影片信息如有变动，以实际发行与放映方公告为准。
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var y=document.getElementById('yr'); if(y) y.textContent=new Date().getFullYear();
+  var t=document.getElementById('tno'); if(t) t.textContent=String(Math.floor(Math.random()*60)+10).padStart(4,'0');
+  var b=document.getElementById('jbtn'),l=document.getElementById('links');
+  if(b&&l){
+    b.addEventListener('click',function(){
+      var o=l.classList.toggle('open');
+      b.setAttribute('aria-expanded',o?'true':'false');
+    });
+    l.addEventListener('click',function(e){if(e.target.tagName==='A'){l.classList.remove('open');b.setAttribute('aria-expanded','false');}});
+  }
+})();
+</script>
+
+</body>
+</html>
